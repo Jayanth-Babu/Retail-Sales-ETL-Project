@@ -1,46 +1,55 @@
-# Retail-Sales-ETL-Project
+# 🚀 Retail Sales ETL Project  
 
-## Overview
+![ETL Flow](./ETL%20flow.png)  
 
-This project uses the **Kaggle API** to download the **"Retail Sales Order Data"**. The data is then processed and cleaned using **Python** and **Pandas**, followed by loading it into a **SQL Server** for further analysis. The analysis addresses business questions related to sales performance, product trends, and profitability.
-
----
-
-## Technologies & Tools Used
-
-- **Data Extraction:** Kaggle API
-- **Data Processing & Cleaning:** Python (Pandas)
-- **Data Transformation & Loading:** Python (SQLAlchemy for loading data into SQL Server)
-- **Data Analysis & Querying:** SQL (SQL Server Management Studio)
+## 📌 Overview  
+This project automates the **extraction, transformation, and loading (ETL)** of retail sales data using **Python, SQL, and Kaggle API**. It aims to analyze **sales performance, product trends, and profitability** by leveraging SQL-based queries.
 
 ---
 
-## Process
-
-### 1. Data Extraction & Loading
-- **Data Retrieval:** Used the Kaggle API to download the "Retail Sales Order Data".
-- **File Extraction:** Extracted the dataset files using Python's `zipfile` module.
-- **Data Loading:** Loaded the CSV file into a **Pandas DataFrame** for manipulation.
-
-### 2. Data Cleaning & Preprocessing
-- **Standardization:** Converted column names to lowercase and replaced spaces with underscores.
-- **Handling Missing Data:** Managed missing values using methods like `fillna()` and `dropna()`.
-- **Feature Engineering:** Created new columns like `discount`, `sale_price`, and `profit`.
-- **Data Cleaning:** Removed irrelevant columns like `list_price`, `cost_price`, and `discount_percent`.
-
-### 3. Data Transformation & Loading into SQL Server
-- **Connection:** Established a connection to SQL Server using **SQLAlchemy**.
-- **Loading Data:** Loaded the cleaned data into a SQL Server table `df_orders` for analysis.
-
-### 4. Data Analysis (SQL)
-- **Top Products:** Identified top-selling products based on total sales revenue using SQL queries.
-- **Sales Growth:** Compared sales growth year-over-year and month-over-month.
-- **Profit Analysis:** Analyzed profit growth between 2022 and 2023.
+## 🛠 Technologies & Tools Used  
+- **📥 Data Extraction:** Kaggle API  
+- **🛠 Data Processing & Cleaning:** Python (`pandas`, `zipfile`)  
+- **📊 Data Transformation & Loading:** Python (`SQLAlchemy`) → SQL Server  
+- **📈 Data Analysis & Querying:** SQL (SQL Server Management Studio)  
 
 ---
 
-## Conclusion
+## 🔄 ETL Process  
 
-This project demonstrates an **end-to-end data analytics pipeline** involving data extraction, cleaning, transformation, and analysis. It showcases skills in working with APIs, data manipulation using Python, and performing SQL-based analysis.
+### **1️⃣ Data Extraction & Loading**  
+✔ Used the **Kaggle API** to download the "Retail Sales Order Data"  
+✔ Extracted CSV files using Python's `zipfile` module  
+✔ Loaded raw data into a **Pandas DataFrame**  
+
+### **2️⃣ Data Cleaning & Preprocessing**  
+✔ Standardized column names (lowercase, no spaces)  
+✔ Handled missing values (`fillna()`, `dropna()`)  
+✔ Engineered new features (`discount`, `sale_price`, `profit`)  
+✔ Removed irrelevant columns (`list_price`, `cost_price`, `discount_percent`)  
+
+### **3️⃣ Data Transformation & Loading into SQL Server**  
+✔ Established a **SQLAlchemy** connection to SQL Server  
+✔ Loaded cleaned data into the `df_orders` table  
+
+### **4️⃣ Data Analysis (SQL Queries)**  
+✔ **Top-Selling Products:** Ranked products by total sales revenue  
+✔ **Sales Growth Trends:** Analyzed YoY and MoM sales growth  
+✔ **Profitability Insights:** Compared profit growth between **2022 & 2023**  
 
 ---
+
+## 🎯 Key Insights  
+📌 Identified **top-performing products** based on revenue trends  
+📌 Analyzed **sales patterns** to forecast future demand  
+📌 Provided **data-driven profitability insights**  
+
+---
+
+## 📢 Conclusion  
+This project demonstrates an **end-to-end ETL pipeline** with **API data extraction, Python-based transformation, SQL-based analysis**, and **business intelligence insights**.  
+
+🔥 **Key Skills Demonstrated:**  
+✅ API Data Extraction  
+✅ Data Cleaning & Feature Engineering  
+✅ SQL-Based Analysis & Visualization    
